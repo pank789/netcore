@@ -2,7 +2,7 @@
 
 set -x
 
-docker login --username ${DOCKER_HUB_USER} --password ${DOCKER_HUB_PASSWORD}
+docker login --username ${DOCKER_HUB_USER} --password pank789
 
 docker push ${DOCKER_HUB_USER}/cgiprofessionalnetcoreservicesjenkins:${BUILD_ID}
 
