@@ -20,7 +20,7 @@ pipeline {
       steps {
         sh 'bash ./jenkins/scripts/run-container.sh'
         input(message: 'Have verified container', ok: 'yes')
-        sh 'bash ./jenkins/scripts/cleanup-container.sh'
+        sh 'bash ./jenkins/scripts/cleanup-containers.sh'
       }
     }
   }
